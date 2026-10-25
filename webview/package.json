@@ -1,0 +1,24 @@
+{
+  "name": "pele-preview-webview",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "predev": "pnpm --dir .. build:icons",
+    "dev": "vite",
+    "prebuild": "pnpm --dir .. build:icons",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^5.0.3",
+    "@types/vscode-webview": "^1.57.5",
+    "svelte": "^5.17.3",
+    "vite": "^6.0.7"
+  },
+  "dependencies": {
+    "pele": "^1.9.0",
+    "@panzoom/panzoom": "^4.5.1",
+    "js-base64": "^3.7.5"
+  }
+}
